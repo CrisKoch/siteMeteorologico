@@ -1,0 +1,37 @@
+#box{
+    box-sizing: border-box;
+    background-image: url('img\weather-icons-master\svg\wi-alien.svg');
+    /**background-image: linear-gradient(red, yellow, blue);**/
+    background-image: linear-gradient(to right, red , blue);
+    background-image: linear-gradient(to right, rgba(0,0,255,0), rgba(0,0,255,1));
+    padding: 20px;
+    /*font-family: 'Scheherazade New', serif;*/
+    font-family: 'Noto Sans Mono', monospace;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+table {
+    border: 1px solid black;
+    
+    
+}
+table  td{
+    border: 1px solid black;
+    padding: 1px;
+}
+#caixaEsq{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+button{
+    font-family: 'Noto Sans Mono', monospace;
+    font-weight: bold;
+
+}
+input[type="text"]{
+    font-family: 'Noto Sans Mono', monospace;
+    font-weight: bold;
+}
+

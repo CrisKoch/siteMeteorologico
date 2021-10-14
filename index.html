@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previsão do tempo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="img/weather-icons-master/css/weather-icons.css">
+
+</head>
+
+<body id="box">
+    Cidade: <input type="text" name="cidade" placeholder="Ex.: São Paulo">
+    <button onclick="insertGoogleScript()">Obter clima</button><br><br>
+    <div id="caixaEsq">
+        <table id="tabela">
+            <tr>
+                <td>Local:</td>
+                <td id="local"></td>
+            </tr>
+            <tr>
+                <td>Latitude:</td>
+                <td id="latitude"></td>
+            </tr>
+            <tr>
+                <td>Longitude:</td>
+                <td id="longitude"></td>
+            </tr>
+            <tr>
+                <td>Data/Hora:</td>
+                <td id="dt-hr"></td>
+            </tr>
+            <tr>
+                <td>Resumo:</td>
+                <td id="resumo"></td>
+            </tr>
+            <tr>
+                <td>Probabilidade de precipitação:</td>
+                <td id="precipitacao"></td>
+            </tr>
+            <tr>
+                <td>Temperatura:</td>
+                <td id="temperatura"></td>
+            </tr>
+            <tr>
+                <td>Sensação térmica:</td>
+                <td id="sensacao"></td>
+            </tr>
+            <tr>
+                <td>Ponto de orvalho:</td>
+                <td id="ponto-orvalho"></td>
+            </tr>
+            <tr>
+                <td>Umidade:</td>
+                <td id="umidade"></td>
+            </tr>
+            <tr>
+                <td>Pressão:</td>
+                <td id="pressao"></td>
+            </tr>
+            <tr>
+                <td>Velocidade do vento:</td>
+                <td id="velocidade"></td>
+            </tr>
+            <tr>
+                <td>Rajada de vento:</td>
+                <td id="rajada"></td>
+            </tr>
+            <tr>
+                <td>Direção do vento:</td>
+                <td id="direcao-vento"></td>
+            </tr>
+            <tr>
+                <td>Cobertura de nuvens:</td>
+                <td id="cobertura-nuvens"></td>
+            </tr>
+            <tr>
+                <td>Índice UV:</td>
+                <td id="indice-uv"></td>
+            </tr>
+            <tr>
+                <td>Visibilidade:</td>
+                <td id="visibilidade"></td>
+            </tr>
+            <tr>
+                <td>Ozônio:</td>
+                <td id="ozonio"></td>
+            </tr>
+            <tr>
+                <td>Deslocamento:</td>
+                <td id="deslocamento"></td>
+            </tr>
+        </table>
+    
+    
+        <img id="imagem" src="img\weather-icons-master\svg\wi-day-cloudy-gusts.svg" alt="" height="500">
+    </div>
+
+</body>
+
+</html>
